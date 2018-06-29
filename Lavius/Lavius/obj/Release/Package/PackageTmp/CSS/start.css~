@@ -1,0 +1,208 @@
+@font-face{
+	font-family: "LMS Lance s Letter Blocks";
+	src:url('../fonts/LMS_Lance_s_Letter_Blocks.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;	
+}
+@font-face{
+	font-family: "Sketch Block";
+	src:url('../fonts/Sketch_Block.ttf') format('truetype');
+	font-weight: normal;
+	font-style: normal;	
+}
+body{
+	background: #24b662;
+	background: url(../IMG/2.jpg) center;
+}
+.userDetails{
+	width: 80%;
+	height: 120px;
+	background: #0095cd;
+	border-radius: 5px;
+	color: white;
+	font-weight: bold;
+	color: #5ccbff;
+	font-family: Arial;
+	line-height: 1.5em;
+	border-right: 2px solid rgba(255,255,255,0.5);
+	text-align:left;
+	/*border-width: 24px;
+	display: block;
+	margin: 0 auto;
+	border-style: solid;
+	border-width: 14px;		
+	-moz-border-image: url(../IMG/frame.jpg) 50 50 69 64  repeat;
+	-webkit-border-image: url(../IMG/frame.jpg) 69 69 70 66 repeat;
+	-o-border-image: url(../IMG/frame.jpg) 69 69 70 66 repeat;
+	border-image: url(../IMG/frame.jpg) 69 89 70 66  repeat;	*/
+}
+.userDetails a{
+	color: white;
+	margin: 0px 25px;
+}
+.userDetails pre{
+	margin: 0px 15px;
+}
+#challengesBox{
+	background: #0e83cd;
+	background: url(../IMG/purty_wood.png) center;
+	border-right: 2px solid rgba(255,255,255,0.5);
+	color: white;
+	font-size: 55px;
+	text-align: center;
+	line-height: 2.53em;
+	width: 55%;
+	height: auto;
+	margin-top: 100px;
+	font-family: "Sketch Block";
+	border-radius: 5px;
+	
+}
+#challenges a{
+	 font-size: 55px;
+	 text-align: center;
+	 margin: 0 20px;
+    color: #3ceffb;
+}
+
+#timer{
+	color: white;
+	font-size: 25px;
+	font-family: "Sketch Block";
+	font-weight: bold;	
+}
+button{
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background: #08C;
+  border: none;
+  border-radius: 3px;
+  /* Font styles */
+  color: white;
+  font-weight: bold;
+  text-decoration: none;
+  position: relative;
+  box-shadow: -3px 0px  white;
+  transition: all 0.1s ease-in;  
+  cursor: pointer; 
+}
+button:hover{
+	border: none;
+	box-shadow: none;
+}
+button:active{ 
+  box-shadow: none;
+  top: 3px;
+  left: 3px;
+}
+input{
+  display: inline-block;
+  padding: 10px;
+  margin: 10px;
+  background: white;
+  border: 1px solid #45ffcc;
+  border-radius: 3px;
+  /* Font styles */
+  color: #333;
+  font-weight: bold;
+  box-shadow: -3px 0px  rgba(255,255,255,0.5);
+  transition: all 0.1s ease-in;
+  font-size: 55px;
+  text-align: center;
+  width: 100px;
+  padding: 5px;
+  position: relative;
+}
+table{
+	width: 100%;
+	text-align: center;
+	color: white;
+	font-size: 30px;
+	text-align: center;
+	line-height: 2.53em;
+	font-family: "Sketch Block";	
+}
+
+button:hover { background: #0AF;}
+/**********JQUERY CONTROLLED ANIMATION*******/
+@-webkit-keyframes my-animation {
+  from {
+    opacity: 0;
+    left: -500px;
+  }
+  to {
+    opacity: 1;
+    left: 0;
+  }
+}
+@keyframes my-animation {
+  from {
+    opacity: 0;
+    left: -500px;
+    transform: rotate(0deg) skew(80deg);
+  }
+  to {
+    opacity: 1;
+    left: 0;
+    transform: rotate(180deg) skew(0deg);
+  }
+}
+.run-animation {
+  position: relative;
+  -webkit-animation: my-animation 2s ease;
+          animation: my-animation 2s ease;
+}
+select{
+  border: none;
+  border-bottom: 1px solid #00ccee;
+  padding: 15px 20px;
+  width: 70%;
+  height: 45px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 8px;
+  color: white;
+  margin: 10px;
+  background: #00ccee;
+  box-shadow: -3px 0px white;
+}
+#logo {
+  text-align: center;
+  font-family: "Sketch Block";
+  color: #46ccfe;
+  color: white;
+  text-shadow: 1px 0px green;
+}
+.newsearch{
+	visibility: hidden;
+}
+#viewTutorial{
+	
+}
+#leftTable{
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 300px;
+	height: 100%;
+	margin: 0;	
+}
+#leftTable button{
+	width: 80%;
+}
+#timerBox{
+	background: url(../IMG/1.svg) center 30%;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	color: white;
+	margin: 0;
+	position: fixed;
+	top: 85px;
+	left: 100px;	
+}
+#next{
+	visibility: hidden;
+}
